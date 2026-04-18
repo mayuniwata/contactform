@@ -77,41 +77,11 @@ php artisan migrate
 
 ---
 
-### シーディング（ダミーデータ作成）
+### ダミーデータ作成
 
 ```
 php artisan migrate:fresh --seed
 ```
-
----
-
-## 使用技術（実行環境）
-
-* PHP 8.x
-* Laravel 8.x / 9.x / 10.x
-* MySQL 8.x
-* nginx 1.x
-* Docker / Docker Compose
-
----
-
-## ER図
-
-（ここにER図の画像を貼る）
-
----
-
-## URL
-
-* 開発環境：http://localhost/
-* phpMyAdmin：http://localhost:8080/
-
----
-
-## ダミーデータ
-
-* categoriesテーブル：5件（Seederで作成）
-* contactsテーブル：35件（Factoryで作成）
 
 ---
 
@@ -122,6 +92,8 @@ MySQL 8.0
 nginx 1.21.1
 Laravel Fortify
 Docker / Docker Compose
+
+---
 
 ## URL
 トップページ
@@ -135,21 +107,25 @@ http://localhost/register
 phpMyAdmin
 http://localhost:8080/
 
+---
+
 ## 認証機能
 Laravel Fortifyを使用
 ログインユーザーのみ管理画面へアクセス可能
 パスワードはハッシュ化して保存#
+
+---
 
 ## ダミーデータ
 categoriesテーブル
 
 Seederを使用して以下5件を登録しています。
 
-商品のお届けについて
-商品の交換について
-商品トラブル
-ショップへのお問い合わせ
-その他
+1.商品のお届けについて
+2.商品の交換について
+3.商品トラブル
+4.ショップへのお問い合わせ
+5.その他
 
 contactsテーブル
 
@@ -160,6 +136,7 @@ php artisan tinker
 ```
 \App\Models\Contact::factory()->count(35)->create();
 ```
+---
 
 ## 主な機能
 お問い合わせ機能
@@ -167,43 +144,53 @@ php artisan tinker
 バリデーション（日本語対応）
 修正時の入力内容保持
 
+---
+
 ## 管理画面
 一覧表示
-7件ごとにページネーション
+・7件ごとにページネーション
+
 検索機能
-名前（姓・名・フルネーム）
-メールアドレス
-性別
-お問い合わせの種類
-日付
+・名前（姓・名・フルネーム）
+・メールアドレス
+・性別
+・お問い合わせの種類
+・日付
+
 詳細機能
-モーダルで表示
+・モーダルで表示
+
 削除機能
-モーダルから削除可能
+・モーダルから削除可能
+
 エクスポート機能
-CSV出力（検索条件反映）
+・CSV出力（検索条件反映）
+
+---
 
 ## テーブル構成
 users
-name
-email
-password
+・name
+・email
+・password
 categories
-id
-content
+・id
+・content
 contacts
-id
-category_id
-last_name
-first_name
-gender
-email
-tel
-address
-building
-detail
-created_at
-updated_at
+・id
+・category_id
+・last_name
+・first_name
+・gender
+・email
+・tel
+・address
+・building
+・detail
+・created_at
+・updated_at
+
+---
 
 ## ER図
 
@@ -211,5 +198,8 @@ ER図は以下ファイルを参照してください。
 
 ER.png
 
+---
+
 ## 注意事項
-Apple Silicon（M1/M2）環境ではMySQLの警告が出る場合がありますが動作に問題はありません
+・Apple Silicon（M1/M2）環境ではMySQLの警告が出る場合がありますが動作に問題はありません
+・.env 設定を正しく行わないとDB接続エラーが発生します
