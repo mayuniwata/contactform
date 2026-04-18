@@ -64,8 +64,9 @@ DB_PASSWORD=laravel_pass
 APP_LOCALE=ja
 ```
 設定後、以下を実行してください。
-
+```
 php artisan config:clear
+```
 ---
 
 ### マイグレーション
