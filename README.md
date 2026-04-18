@@ -1,7 +1,7 @@
 # FashionablyLate
 
 お問い合わせフォームアプリです。
-  
+
 ユーザーはお問い合わせを送信でき、管理者はログイン後に管理画面で一覧の確認・検索・削除・CSVエクスポートができます。
 
 ---
@@ -65,10 +65,13 @@ DB_PASSWORD=laravel_pass
 
 APP_LOCALE=ja
 ```
+
 設定後、以下を実行してください。
+
 ```
 php artisan config:clear
 ```
+
 ---
 
 ### マイグレーション
@@ -88,6 +91,7 @@ php artisan migrate:fresh --seed
 ---
 
 ## 使用技術
+
 Laravel 8.x
 PHP 8.1
 MySQL 8.0
@@ -98,6 +102,7 @@ Docker / Docker Compose
 ---
 
 ## URL
+
 トップページ
 http://localhost/
 管理画面
@@ -112,6 +117,7 @@ http://localhost:8080/
 ---
 
 ## 認証機能
+
 Laravel Fortifyを使用
 ログインユーザーのみ管理画面へアクセス可能
 パスワードはハッシュ化して保存#
@@ -119,28 +125,29 @@ Laravel Fortifyを使用
 ---
 
 ## ダミーデータ
+
 categoriesテーブル
 
 Seederを使用して以下5件を登録しています。
 
-1.商品のお届けについて
-2.商品の交換について
-3.商品トラブル
-4.ショップへのお問い合わせ
-5.その他
+1.商品のお届けについて2.商品の交換について3.商品トラブル4.ショップへのお問い合わせ5.その他
 
 contactsテーブル
 
 Factoryを使用して35件のダミーデータを作成しています。
+
 ```
 php artisan tinker
 ```
+
 ```
 \App\Models\Contact::factory()->count(35)->create();
 ```
+
 ---
 
 ## 主な機能
+
 お問い合わせ機能
 入力 → 確認 → 送信
 バリデーション（日本語対応）
@@ -149,6 +156,7 @@ php artisan tinker
 ---
 
 ## 管理画面
+
 一覧表示
 ・7件ごとにページネーション
 
@@ -171,6 +179,7 @@ php artisan tinker
 ---
 
 ## テーブル構成
+
 users
 ・name
 ・email
@@ -203,5 +212,6 @@ ER.png
 ---
 
 ## 注意事項
+
 ・Apple Silicon（M1/M2）環境ではMySQLの警告が出る場合がありますが動作に問題はありません
 ・.env 設定を正しく行わないとDB接続エラーが発生します
