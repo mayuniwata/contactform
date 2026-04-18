@@ -207,9 +207,7 @@ contacts
 
 ## ER図
 
-ER図は以下ファイルを参照してください。
-
-ER.png
+![ER図](docs/ER.png)
 
 ---
 
