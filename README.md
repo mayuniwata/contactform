@@ -10,12 +10,13 @@
 
 1. リポジトリのクローン
 
-```bash
+```
 git clone https://github.com/mayuniwata/contactform.git
 cd contactform
-
+```
 
 2. Docker起動
+
 ```
 docker-compose up -d --build
 ```
