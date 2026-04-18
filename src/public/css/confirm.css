@@ -1,0 +1,79 @@
+body {
+    background-color: #f8f5f2;
+    font-family: serif;
+}
+
+.confirm {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.confirm__title {
+    text-align: center;
+    color: #8b7969;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+/* テーブル */
+.confirm-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.confirm-table th {
+    width: 30%;
+    background-color: #b7a293;
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.confirm-table td {
+    width: 70%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    color: #8b7969;
+}
+
+/* 長文 */
+.detail {
+    line-height: 1.6;
+}
+/* ボタンエリア */
+.confirm__button {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+/* 送信ボタン */
+.btn-send {
+    width: 120px;
+    height: 45px;
+    background: #8b7969;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* 修正ボタン */
+.btn-fix {
+    background: none;
+    border: none;
+    color: #8b7969;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* hover */
+.btn-fix:hover {
+    opacity: 0.7;
+}

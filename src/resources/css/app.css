@@ -1,0 +1,78 @@
+body {
+    background-color: #f8f5f2;
+    font-family: serif;
+}
+
+/* 全体 */
+.login {
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* タイトル */
+.login__title {
+    font-size: 28px;
+    color: #8b7969;
+    margin-bottom: 40px;
+}
+
+/* カード */
+.login__card {
+    width: 500px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 60px 80px;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+}
+
+/* 入力グループ */
+.login__group {
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.login__group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #8b7969;
+    font-size: 16px;
+}
+
+/* input */
+.login__group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+/* ボタン */
+.login__btn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.login__btn button {
+    background: #8b7969;
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+    margin-top: 20px;
+}
+
+/* エラー */
+.error {
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* リセット対策 */
+.login__group input {
+    width: 100%;
+    display: block;
+}
+
+.login__card {
+    box-sizing: border-box;
+}

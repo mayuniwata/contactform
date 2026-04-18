@@ -1,0 +1,106 @@
+body {
+    background-color: #f8f5f2;
+    font-family: serif;
+}
+
+.contact {
+    width: 70%;
+    margin: 40px auto;
+}
+
+.contact__title {
+    text-align: center;
+    color: #8b7969;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.form__group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.form__group label {
+    width: 200px;
+    min-width: 200px;
+    color: #8b7969;
+}
+
+.form__input {
+    width: 100%;
+}
+
+.required {
+    color: red;
+}
+
+.form__name {
+    display: flex;
+    gap: 10px;
+}
+
+.form__name div {
+    width: 100%;
+}
+
+.gender {
+    display: flex;
+    gap: 50px;
+}
+
+.gender label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.form__tel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form__tel input {
+    width: 80px;
+}
+
+input:not([type="radio"]),
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    accent-color: #8B7969;
+}
+
+textarea {
+    height: 120px;
+}
+
+.form__button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    background: #8b7969;
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+}
+
+/* エラー */
+.error {
+    min-height: 18px;
+    margin: 6px 0 0;
+    color: #ff0000;
+    font-size: 12px;
+    line-height: 1.4;
+}

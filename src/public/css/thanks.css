@@ -1,0 +1,40 @@
+body {
+    background-color: #f8f5f2;
+    font-family: serif;
+}
+
+.thanks {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* メッセージ */
+.thanks__message {
+    color: #8b7969;
+    font-size: 20px;
+    margin-bottom: 30px;
+    z-index: 2;
+}
+
+/* ボタン */
+.thanks__btn {
+    background-color: #8b7969;
+    color: #fff;
+    padding: 10px 40px;
+    text-decoration: none;
+    z-index: 2;
+}
+
+/* 背景の大きい文字 */
+.thanks__bg {
+    position: absolute;
+    font-size: 200px;
+    color: #000;
+    opacity: 0.05;
+    z-index: 1;
+    white-space: nowrap;
+}
